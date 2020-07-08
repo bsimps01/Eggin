@@ -15,10 +15,13 @@
 		1B31934924A552F000C6C87D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B31934724A552F000C6C87D /* Main.storyboard */; };
 		1B31934B24A552F500C6C87D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B31934A24A552F500C6C87D /* Assets.xcassets */; };
 		1B31934E24A552F500C6C87D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B31934C24A552F500C6C87D /* LaunchScreen.storyboard */; };
+		1B31939624B5448E00C6C87D /* CustomButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B31939524B5448E00C6C87D /* CustomButtonNode.swift */; };
+		1B31939824B5483800C6C87D /* ObstacleSpawner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B31939724B5483800C6C87D /* ObstacleSpawner.swift */; };
+		1B31939A24B5489100C6C87D /* Schemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B31939924B5489100C6C87D /* Schemes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B31933A24A552F000C6C87D /* Eggin'.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eggin'.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B31933A24A552F000C6C87D /* Eggin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eggin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B31933D24A552F000C6C87D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B31933F24A552F000C6C87D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		1B31934124A552F000C6C87D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		1B31934A24A552F500C6C87D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B31934D24A552F500C6C87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B31934F24A552F500C6C87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B31939524B5448E00C6C87D /* CustomButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonNode.swift; sourceTree = "<group>"; };
+		1B31939724B5483800C6C87D /* ObstacleSpawner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleSpawner.swift; sourceTree = "<group>"; };
+		1B31939924B5489100C6C87D /* Schemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schemes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +50,7 @@
 		1B31933124A552F000C6C87D = {
 			isa = PBXGroup;
 			children = (
-				1B31933C24A552F000C6C87D /* Eggin' */,
+				1B31933C24A552F000C6C87D /* Eggin */,
 				1B31933B24A552F000C6C87D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,33 +58,36 @@
 		1B31933B24A552F000C6C87D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B31933A24A552F000C6C87D /* Eggin'.app */,
+				1B31933A24A552F000C6C87D /* Eggin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1B31933C24A552F000C6C87D /* Eggin' */ = {
+		1B31933C24A552F000C6C87D /* Eggin */ = {
 			isa = PBXGroup;
 			children = (
 				1B31933D24A552F000C6C87D /* AppDelegate.swift */,
 				1B31933F24A552F000C6C87D /* GameScene.sks */,
 				1B31934124A552F000C6C87D /* Actions.sks */,
 				1B31934324A552F000C6C87D /* GameScene.swift */,
+				1B31939724B5483800C6C87D /* ObstacleSpawner.swift */,
+				1B31939924B5489100C6C87D /* Schemes.swift */,
+				1B31939524B5448E00C6C87D /* CustomButtonNode.swift */,
 				1B31934524A552F000C6C87D /* GameViewController.swift */,
 				1B31934724A552F000C6C87D /* Main.storyboard */,
 				1B31934A24A552F500C6C87D /* Assets.xcassets */,
 				1B31934C24A552F500C6C87D /* LaunchScreen.storyboard */,
 				1B31934F24A552F500C6C87D /* Info.plist */,
 			);
-			path = "Eggin'";
+			path = Eggin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1B31933924A552F000C6C87D /* Eggin' */ = {
+		1B31933924A552F000C6C87D /* Eggin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B31935224A552F500C6C87D /* Build configuration list for PBXNativeTarget "Eggin'" */;
+			buildConfigurationList = 1B31935224A552F500C6C87D /* Build configuration list for PBXNativeTarget "Eggin" */;
 			buildPhases = (
 				1B31933624A552F000C6C87D /* Sources */,
 				1B31933724A552F000C6C87D /* Frameworks */,
@@ -88,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = "Eggin'";
+			name = Eggin;
 			productName = "Eggin'";
-			productReference = 1B31933A24A552F000C6C87D /* Eggin'.app */;
+			productReference = 1B31933A24A552F000C6C87D /* Eggin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1B31933524A552F000C6C87D /* Build configuration list for PBXProject "Eggin'" */;
+			buildConfigurationList = 1B31933524A552F000C6C87D /* Build configuration list for PBXProject "Eggin" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1B31933924A552F000C6C87D /* Eggin' */,
+				1B31933924A552F000C6C87D /* Eggin */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +157,9 @@
 			files = (
 				1B31934424A552F000C6C87D /* GameScene.swift in Sources */,
 				1B31934624A552F000C6C87D /* GameViewController.swift in Sources */,
+				1B31939A24B5489100C6C87D /* Schemes.swift in Sources */,
+				1B31939624B5448E00C6C87D /* CustomButtonNode.swift in Sources */,
+				1B31939824B5483800C6C87D /* ObstacleSpawner.swift in Sources */,
 				1B31933E24A552F000C6C87D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,13 +306,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KT624V79W;
-				INFOPLIST_FILE = "Eggin'/Info.plist";
+				INFOPLIST_FILE = Eggin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.makeschool.Eggin-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.Eggin;
+				PRODUCT_NAME = Eggin;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,13 +324,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KT624V79W;
-				INFOPLIST_FILE = "Eggin'/Info.plist";
+				INFOPLIST_FILE = Eggin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.makeschool.Eggin-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.Eggin;
+				PRODUCT_NAME = Eggin;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -327,7 +339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B31933524A552F000C6C87D /* Build configuration list for PBXProject "Eggin'" */ = {
+		1B31933524A552F000C6C87D /* Build configuration list for PBXProject "Eggin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B31935024A552F500C6C87D /* Debug */,
@@ -336,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B31935224A552F500C6C87D /* Build configuration list for PBXNativeTarget "Eggin'" */ = {
+		1B31935224A552F500C6C87D /* Build configuration list for PBXNativeTarget "Eggin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B31935324A552F500C6C87D /* Debug */,
