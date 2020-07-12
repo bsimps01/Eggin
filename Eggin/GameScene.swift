@@ -111,6 +111,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     @objc func startGenerator(){
         self.obstacleSpawner.generate(scene: self.scene!)
     }
+    
     //MARK: Check Player
     func checkPlayer(){
         if player.position.x < player.initialPos.x - 10{
@@ -180,7 +181,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         super.update(currentTime)
         /* Process world scrolling */
         scrollWorld()
-        obstacleSpawner.generate(scene: self.scene!)
+        //obstacleSpawner.generate(scene: self.scene!)
         
         if gameState == .Active {
             checkBody()
